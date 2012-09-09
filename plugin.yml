@@ -1,0 +1,22 @@
+name: Freeze
+main: me.lucasemanuel.freeze.Main
+version: 2.1
+
+commands:
+  freeze:
+    description: Freezes a player and stops him from using commands or moving.
+    usage: /<command> <playername>
+    permission: freeze.commands.freeze
+  unfreeze:
+    description: Unfreezes a player.
+    usage: /<command> <playername>
+    permission: freeze.commands.unfreeze
+  freezelist:
+    description: Lists the names of all frozen players.
+    usage: /<command>
+    permission: freeze.commands.freezelist
+    
+permissions:
+  freeze.override:
+    description: People with this permission cant be frozen.
+    default: false
